@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "img": "img/index-bg.jpg",
+    "desc": "蓝色"
+  },
+  {
+    "id": 2,
+    "img": "img/index-bg-black.jpg",
+    "desc": "绿色"
+  }
+]

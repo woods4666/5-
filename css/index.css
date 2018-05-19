@@ -1,0 +1,106 @@
+
+/*banner1*/
+#banner1{
+    width: 100%;
+    height:auto;
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+#banner1 ul.banImg li{
+    width: 100%;
+    /*display: none;*/
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+}
+
+#banner1 ul.banImg li:nth-of-type(1){
+    /*display: block;*/
+    opacity: 1;
+    z-index: 1;
+}
+
+#banner1 li img{
+    display: block;
+    width: 100%;
+}
+
+#banner1 .downloadBox{
+    position: absolute;
+    text-align: center;
+    width: 242px;
+    margin:auto;
+    left: 0;
+    right: 0;
+    bottom: 120px;
+}
+
+#banner1 .downloadBox a.download{
+    font-size: 30px;
+    display: block;
+    width: 242px;
+    height: 75px;
+    line-height: 75px;
+    margin-bottom: 16px;
+    background: #fff;
+    color: #0083e4;
+}
+#banner1 li:nth-of-type(2) .downloadBox a.download{
+    color: #009670;
+}
+#banner1 li:nth-of-type(1) .downloadBox a.download i{
+    display: inline-block;
+    width: 24px;
+    height: 27px;
+    margin-right: 10px;
+    background: url('../img/btn-down-blue.png') 0 0 no-repeat;
+}
+
+#banner1 li:nth-of-type(2) .downloadBox a.download i{
+    display: inline-block;
+    width: 24px;
+    height: 27px;
+    margin-right: 10px;
+    background: url('../img/btn-down-green.png') 0 0 no-repeat;
+}
+
+#banner1 .downloadBox p{
+    font-size: 14px;
+    color: #fff;
+}
+
+#banner1 ul.focus {
+    position: absolute;
+    width: 70px;
+    left: 0;
+    right: 0;
+    bottom: 38px;
+    margin:auto;
+    z-index: 2;
+}
+
+#banner1 ul.focus li{
+    float: left;
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #ddd;
+}
+
+#banner1 ul.focus li.active{
+    background: #fff;
+}
+
+#banner1 ul.focus li:nth-of-type(1){
+    margin-right: 30px;
+}
+
+
+
+
+
+
+
