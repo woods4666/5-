@@ -88,7 +88,6 @@ let banner1Render = (function () {
     let handleFocus = function () {
         [].forEach.call(focusList, (curFocus, index) => {
             curFocus.onmouseover = () => {
-                console.log('cur');
                 stepIndex = index;
                 play();
             }
@@ -131,8 +130,7 @@ let extensionRender = (function () {
         autoTimer = null,
         focusTimer = null,
         interval = 3000,
-        speed = 1000,
-        isLeave=false;
+        speed = 1000;
     let queryData = function () {
         return new Promise((resolve, reject) => {
             let xhr = new XMLHttpRequest();
@@ -210,8 +208,6 @@ let extensionRender = (function () {
             if (time >= speed) {
                 curI.style.width = '100%';
                 clearInterval(focusTimer);
-                isLeave=false;
-
                 return;
             }
             curI.style.width = time / speed * 100 + '%';
@@ -228,8 +224,7 @@ let extensionRender = (function () {
 
     let autoMove = function () {
         stepIndex++;
-        console.log(1,stepIndex);
-
+        // console.log(1,stepIndex);
         if (stepIndex > newLen - 5) {
             utils.css(banImg, 'left', 600);
             stepIndex = 0;
@@ -242,17 +237,17 @@ let extensionRender = (function () {
         [].forEach.call(focusList, (item, index) => {
             item.onmouseenter = () => {
                 if (stepIndex === index) return;
-                stepIndex = index;
-                // console.log(stepIndex);
-                clearInterval(focusTimer);
                 clearInterval(autoTimer);
+                autoTimer=null;
+                clearInterval(focusTimer);
+                stepIndex = index;
+
                 slideChange();
             };
             item.onmouseleave = () => {
-                if (isLeave) return;
-                isLeave=true;
-                autoTimer = setInterval(autoMove, interval);
-                console.log(stepIndex);
+                // console.log(autoTimer);
+
+                autoTimer||(autoTimer = setInterval(autoMove, interval));
             }
         });
     };
