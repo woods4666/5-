@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "img": "img/slide-bg1.png",
+    "icon": "img/slide-icon1.png",
+    "keyword":"微信",
+    "desc":"腾讯官方授权微信浏览器版，可在电脑上使用微信的相关功能，打字速度更快，支持拖拽传图、快速发送文件，享受“边上网边聊天”的畅快之旅。"
+  },
+  {
+    "id": 2,
+    "img": "img/slide-bg2.png",
+    "icon": "img/slide-icon2.png",
+    "keyword":"广告过滤",
+    "desc":"Adblock Plus 是世界上流行的广告拦截软件。所有广告被自动阻挡，包括图片广告、文字链链接、浮窗广告，尽情享受洁净的网络世界。"
+  },
+  {
+    "id": 3,
+    "img": "img/slide-bg3.png",
+    "icon": "img/slide-icon3.png",
+    "keyword":"截图工具",
+    "desc":"全新升级的截图工具，支持网页内容截图、隐藏窗口截图、网页整体保存为图片等，内置画笔、箭头、马赛克等快捷编辑功能，快捷方便。"
+  },
+  {
+    "id": 4,
+    "img": "img/slide-bg4.png",
+    "icon": "img/slide-icon4.png",
+    "keyword":"夜间模式",
+    "desc":"浏览器更懂夜的黑。内置夜间模式，可任意调整浏览区域的亮度和色温，把网页背景变成适合夜晚阅读的模式，同时可自由设定生效时间。。"
+  },
+  {
+    "id": 5,
+    "img": "img/slide-bg5.png",
+    "icon": "img/slide-icon5.png",
+    "keyword":"翻译君",
+    "desc":"专业的网页翻译助手，支持划词翻译、手动输入翻译，支持网页整体翻译、鼠标悬停显示原文等操作。牛津词典官方授权，准确率高，速度快。"
+  }
+]

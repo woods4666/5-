@@ -1,4 +1,8 @@
 
+html,body{
+    background: #f4f4f4;
+}
+
 /*banner1*/
 #banner1{
     width: 100%;
@@ -98,9 +102,87 @@
     margin-right: 30px;
 }
 
+#extension{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 50px;
+}
+#extension ul.banImg{
+    width: 2900px;
+    position: relative;
+    margin-left: -850px;
+    left: 0;
+}
+#extension li{
+    float: left;
+    margin-bottom: 40px;
+    width: 500px;
+    margin-right: 100px;
+}
+#extension li > img{
+    width: 500px;
+    height: 335px;
+    display: block;
+    margin-bottom: 20px;
+}
 
+#extension li .info{
+    width: 100%;
+}
 
+#extension li .info .infoImg{
+    width: 80px;
+    float: left;
+}
+#extension li .info .infoImg img{
+    display: block;
+    width: 80px;
+    height: 80px;
+}
 
+#extension li .info .infoImg p{
+    width: 100%;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+#extension li:nth-last-of-type(1){
+    margin-right: 0;
+}
 
+#extension li .info .info-desc{
+    width: 400px;
+    float: left;
+    font-size: 16px;
+    line-height: 38px;
+    margin-left: 20px;
+}
 
+#extension .focus{
+    position: absolute;
+    width: 540px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin:auto ;
+}
 
+#extension .focus span{
+    float: left;
+    width: 100px;
+    height: 5px;
+    background: #afafaf;
+    margin-right: 10px;
+}
+
+#extension .focus span:nth-last-of-type(1){
+    margin-right: 0;
+}
+#extension .focus i{
+    display: block;
+    height: 100%;
+    width: 0;
+    background: #000;
+}
