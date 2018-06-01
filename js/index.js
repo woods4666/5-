@@ -130,7 +130,7 @@ let extensionRender = (function () {
         autoTimer = null,
         focusTimer = null,
         interval = 3000,
-        speed = 1000;
+        speed = 600;
     let queryData = function () {
         return new Promise((resolve, reject) => {
             let xhr = new XMLHttpRequest();
@@ -205,12 +205,12 @@ let extensionRender = (function () {
         clearInterval(focusTimer);
         focusTimer = setInterval(() => {
             time += 17;
-            if (time >= speed) {
+            if (time >= interval) {
                 curI.style.width = '100%';
                 clearInterval(focusTimer);
                 return;
             }
-            curI.style.width = time / speed * 100 + '%';
+            curI.style.width = time / interval * 100 + '%';
             // console.log(utils.css(curI, 'width'));
 
         }, 17)
@@ -219,7 +219,6 @@ let extensionRender = (function () {
     let slideChange = function () {
         // console.log(stepIndex);
         animate(banImg, {left: -stepIndex * moveLeft}, speed);
-        focusChange();
     };
 
     let autoMove = function () {
@@ -229,6 +228,8 @@ let extensionRender = (function () {
             utils.css(banImg, 'left', 600);
             stepIndex = 0;
         }
+        focusChange();
+
         // console.log(stepIndex);
         slideChange();
     };
@@ -237,17 +238,19 @@ let extensionRender = (function () {
         [].forEach.call(focusList, (item, index) => {
             item.onmouseenter = () => {
                 if (stepIndex === index) return;
+                console.log(autoTimer,'clear');
                 clearInterval(autoTimer);
                 autoTimer=null;
                 clearInterval(focusTimer);
                 stepIndex = index;
-
                 slideChange();
             };
             item.onmouseleave = () => {
                 // console.log(autoTimer);
 
                 autoTimer||(autoTimer = setInterval(autoMove, interval));
+                // autoTimer = setInterval(autoMove, interval);
+                console.log(autoTimer,'set');
             }
         });
     };
@@ -256,6 +259,7 @@ let extensionRender = (function () {
         init: function () {
             let promise = queryData();
             promise.then(bindHTML).then(() => {
+                autoMove();
                 autoTimer = setInterval(autoMove, interval);
                 handleFocus();
             })
