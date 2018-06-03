@@ -3,14 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet/less" href="css/main.less">
     <link rel="stylesheet" href="css/reset.min.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-<div id="header"></div>
-<div id="banner1">
-    <ul class="banImg">
-        <!--<li class="active">
+    <div class="fixedBar">
+        <div class="wrapper-lf">
+            <div class="fixed-l"></div>
+            <div class="fixed-r">
+                <ul>
+                    <li>特权</li>
+                    <li>论坛</li>
+                    <li>帮助</li>
+                    <li>反馈建议</li>
+                    <li>9.7版本下载</li>
+                    <li id="fixed-btn">立即下载</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  <div id="header"></div>
+    <div id="banner1">
+        <ul class="banImg">
+            <!--<li class="active">
             <img src="img/index-bg.jpg" alt="">
             <div class="downloadBox">
                 <a href="#" class="download"><i></i>立即下载</a>
@@ -24,94 +40,124 @@
                 <p>版本：10.0</p>
             </div>
         </li>-->
-    </ul>
-    <ul class="focus clearfix">
-        <!--<li class="active"></li>
+        </ul>
+        <ul class="focus clearfix">
+            <!--<li class="active"></li>
         <li></li>-->
-    </ul>
-</div>
-<div id="jump"></div>
-<!--郭鸿宇-->
-
-<div id="skin"></div>
-<div id="speed"></div>
-<!--郭鸿宇-->
-
-<div id="extension">
-    <ul class="banImg clearfix">
-        <li>
-            <img src="img/slide-bg1.png" alt="">
-            <div class="info clearfix">
-                <div class="infoImg">
-                    <img src="img/slide-icon1.png" alt="">
-                    <p>微信大家</p>
-                </div>
-                <div class="info-desc">
-                    腾讯官方授权微信浏览器版，可在电脑上使用微信的相关功能，打字速度更快，支持拖拽传图、快速发送文件，享受“边上网边聊天”的畅快之旅。
-                </div>
-            </div>
-        </li>
-        <li>
-            <img src="img/slide-bg1.png" alt="">
-            <div class="info">
-                <div class="infoImg">
-                    <img src="img/slide-icon1.png" alt="">
-                    <p>微信</p>
-                </div>
-                <div class="info-desc">
-                    腾讯官方授权微信浏览器版，可在电脑上使用微信的相关功能，打字速度更快，支持拖拽传图、快速发送文件，享受“边上网边聊天”的畅快之旅。
-                </div>
-            </div>
-        </li>
-        <li>
-            <img src="img/slide-bg1.png" alt="">
-            <div class="info">
-                <div class="infoImg">
-                    <img src="img/slide-icon1.png" alt="">
-                    <p>微信</p>
-                </div>
-                <div class="info-desc">
-                    腾讯官方授权微信浏览器版，可在电脑上使用微信的相关功能，打字速度更快，支持拖拽传图、快速发送文件，享受“边上网边聊天”的畅快之旅。
-                </div>
-            </div>
-        </li>
-        <li>
-            <img src="img/slide-bg1.png" alt="">
-            <div class="info">
-                <div class="infoImg">
-                    <img src="img/slide-icon1.png" alt="">
-                    <p>微信</p>
-                </div>
-                <div class="info-desc">
-                    腾讯官方授权微信浏览器版，可在电脑上使用微信的相关功能，打字速度更快，支持拖拽传图、快速发送文件，享受“边上网边聊天”的畅快之旅。
-                </div>
-            </div>
-        </li>
-        <li>
-            <img src="img/slide-bg1.png" alt="">
-            <div class="info">
-                <div class="infoImg">
-                    <img src="img/slide-icon1.png" alt="">
-                    <p>微信</p>
-                </div>
-                <div class="info-desc">
-                    腾讯官方授权微信浏览器版，可在电脑上使用微信的相关功能，打字速度更快，支持拖拽传图、快速发送文件，享受“边上网边聊天”的畅快之旅。
-                </div>
-            </div>
-        </li>
-    </ul>
-    <div class="focus">
-        <span class="s1"><i></i></span>
-        <span class="s2"><i></i></span>
-        <span class="s3"><i></i></span>
-        <span class="s4"><i></i></span>
-        <span class="s5"><i></i></span>
+        </ul>
     </div>
-</div>
-<div id="life"></div>
-<div id="footer"></div>
-<script src="js/animate.js"></script>
+    <div id="jump"></div>
+    <!--郭鸿宇-->
 
-<script src="js/index.js"></script>
+    <div id="skin"></div>
+    <div id="speed"></div>
+    <!--郭鸿宇-->
+
+    <div id="extension">
+        <ul class="banImg clearfix">
+            <li>
+                <img src="img/slide-bg1.png" alt="">
+                <div class="info clearfix">
+                    <div class="infoImg">
+                        <img src="img/slide-icon1.png" alt="">
+                        <p>微信大家</p>
+                    </div>
+                    <div class="info-desc">
+                        腾讯官方授权微信浏览器版，可在电脑上使用微信的相关功能，打字速度更快，支持拖拽传图、快速发送文件，享受“边上网边聊天”的畅快之旅。
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="img/slide-bg1.png" alt="">
+                <div class="info">
+                    <div class="infoImg">
+                        <img src="img/slide-icon1.png" alt="">
+                        <p>微信</p>
+                    </div>
+                    <div class="info-desc">
+                        腾讯官方授权微信浏览器版，可在电脑上使用微信的相关功能，打字速度更快，支持拖拽传图、快速发送文件，享受“边上网边聊天”的畅快之旅。
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="img/slide-bg1.png" alt="">
+                <div class="info">
+                    <div class="infoImg">
+                        <img src="img/slide-icon1.png" alt="">
+                        <p>微信</p>
+                    </div>
+                    <div class="info-desc">
+                        腾讯官方授权微信浏览器版，可在电脑上使用微信的相关功能，打字速度更快，支持拖拽传图、快速发送文件，享受“边上网边聊天”的畅快之旅。
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="img/slide-bg1.png" alt="">
+                <div class="info">
+                    <div class="infoImg">
+                        <img src="img/slide-icon1.png" alt="">
+                        <p>微信</p>
+                    </div>
+                    <div class="info-desc">
+                        腾讯官方授权微信浏览器版，可在电脑上使用微信的相关功能，打字速度更快，支持拖拽传图、快速发送文件，享受“边上网边聊天”的畅快之旅。
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="img/slide-bg1.png" alt="">
+                <div class="info">
+                    <div class="infoImg">
+                        <img src="img/slide-icon1.png" alt="">
+                        <p>微信</p>
+                    </div>
+                    <div class="info-desc">
+                        腾讯官方授权微信浏览器版，可在电脑上使用微信的相关功能，打字速度更快，支持拖拽传图、快速发送文件，享受“边上网边聊天”的畅快之旅。
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="focus">
+            <span class="s1">
+                <i></i>
+            </span>
+            <span class="s2">
+                <i></i>
+            </span>
+            <span class="s3">
+                <i></i>
+            </span>
+            <span class="s4">
+                <i></i>
+            </span>
+            <span class="s5">
+                <i></i>
+            </span>
+        </div>
+    </div>
+    <div id="life"></div>
+    <div id="footer"></div>
+    <div class="footer-lf" id="footer-lf">
+        <p class="ts-bot">正是兴趣</p>
+        <p class="ts-bot">让生活如此与众不同</p>
+        <div class="footer-bg ts-bot"><img src="img/page-lf.png" alt=""></div>
+        <div class="footer-ul">
+            <ul>
+                <li>安全论坛</li>
+                <li>特权中心</li>
+                <li>升级日志</li>
+                <li>安全统计</li>
+                <li>QQ浏览器 for Mac</li>
+                <li>QQ浏览器 for iPad</li>
+                <li>wiki</li>
+            </ul>
+            <div>© 2018 Tencent</div>
+        </div>
+    </div>
+    <script src="less-2.5.3.min.js"></script>
+    <script src="js/animate.js"></script>
+
+    <script src="js/index.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
