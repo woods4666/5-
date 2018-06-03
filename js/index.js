@@ -123,6 +123,7 @@ let extensionRender = (function () {
         focus = extension.querySelector('.focus'),
         imgList = null,
         focusList = null,
+        iList=[];
         everyWidth = 500,
         moveLeft = null,
         stepIndex = -1,
@@ -186,6 +187,9 @@ let extensionRender = (function () {
         focus.innerHTML = focusStr;
         imgList = banImg.querySelectorAll('li');
         focusList = focus.querySelectorAll('span');
+        [].forEach.call(focusList,(item,index)=>{
+            iList.push(item.querySelector('i'));
+        });
         let marginRight = utils.css(imgList[0], 'marginRight');
         newLen = imgList.length;
         utils.css(banImg, 'width', everyWidth * newLen + marginRight * (newLen - 1));
@@ -238,7 +242,15 @@ let extensionRender = (function () {
         [].forEach.call(focusList, (item, index) => {
             item.onmouseenter = () => {
                 if (stepIndex === index) return;
-                console.log(autoTimer,'clear');
+                iList.forEach((item,iIndex)=>{
+                    let curI=iList[iIndex];
+                    if (index===iIndex){
+                        utils.css(curI,'width','100%');
+                        return;
+                    }
+                    utils.css(curI,'width',0);
+
+                });
                 clearInterval(autoTimer);
                 autoTimer=null;
                 clearInterval(focusTimer);
