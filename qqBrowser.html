@@ -3,50 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet/less" href="css/main.less">
     <link rel="stylesheet" href="css/reset.min.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-<div id="header"></div>
+<div class="fixedBar">
+    <div class="wrapper-lf">
+        <div class="fixed-l"></div>
+        <div class="fixed-r">
+            <ul>
+                <li>特权</li>
+                <li>论坛</li>
+                <li>帮助</li>
+                <li>反馈建议</li>
+                <li>9.7版本下载</li>
+                <li id="fixed-btn">立即下载</li>
+            </ul>
+        </div>
+    </div>
+</div>
 <div id="banner1">
     <ul class="banImg">
         <!--<li class="active">
-            <img src="img/index-bg.jpg" alt="">
-            <div class="downloadBox">
-                <a href="#" class="download"><i></i>立即下载</a>
-                <p>版本：10.0</p>
-            </div>
-        </li>
-        <li>
-            <img src="img/index-bg-black.jpg" alt="">
-            <div class="downloadBox">
-                <a href="#" class="download"><i></i>立即下载</a>
-                <p>版本：10.0</p>
-            </div>
-        </li>-->
+        <img src="img/index-bg.jpg" alt="">
+        <div class="downloadBox">
+            <a href="#" class="download"><i></i>立即下载</a>
+            <p>版本：10.0</p>
+        </div>
+    </li>
+    <li>
+        <img src="img/index-bg-black.jpg" alt="">
+        <div class="downloadBox">
+            <a href="#" class="download"><i></i>立即下载</a>
+            <p>版本：10.0</p>
+        </div>
+    </li>-->
     </ul>
     <ul class="focus clearfix">
-        <!--<li class="active"></li>
-        <li></li>-->
+        <li class="active"></li>
+    <li></li>
+
     </ul>
 </div>
+<!--郭鸿宇-->
+<section class="skin" id="skin">
+    <div class="skin-inner">
+        <div class="skin-header">
+            <h1 class="title">全面屏皮肤，定制你的浏览器</h1>
+            <p class="info">新一代浏览器设计，上百款精美壁纸，搭配毛玻璃磨砂界面，给你耳目一新的惊喜。</p>
+        </div>
+        <div class="skin-w">
+            <div class="skin-w-inner">
+                <video src="
+http://browser.qq.com/static/five.mp4?v=2" class="skin-video" autoplay loop preload="metadata"></video>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="speed" id="speed">
+    <div class="speed-wrapper">
+        <div class="video-w">
+            <video src="http://browser.qq.com/static/page-four.mp4?v=5" class="speed-video video1" autoplay loop  preload="metadata"></video>
+            <div class="video-bg">
+                <div class="video-info">
+                    <img src="img/page-four-chrom.png" srcset="img/page-four-chrom@2x.png" alt="" class="info-title">
+                    <div class="info-intro">至强性能，快到超出你的想象</div>
+                    <div class="info-feature clearfix">
+                        <div class="feature-item">
+                            <img src="img/four-icon-chrom.png" alt="">
+                            <p class="feature-text">内核性能强劲</p>
+
+                        </div>
+                        <div class="feature-item">
+                            <img src="img/four-icon-quick.png" alt="">
+                            <p class="feature-text">网页极速打开</p>
+
+                        </div>
+                        <div class="feature-item">
+                            <img src="img/four-icon-time.png" alt="">
+                            <p class="feature-text">瞬间启动</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</section>
+<!--郭鸿宇-->
+
+
 <div id="jump"></div>
 <!--郭鸿宇-->
-<style>
-    #skin video:not([controls]) {
-        display: block;
-        height: 563px;
-    }
 
-</style>
-<div id="skin">
-    <!--<video loop preload style="width: 300px;height:400px">
-        <source src="video/1.mp4" type="video/mp4">
-    </video>-->
-    <video src="video/1.mp4" autoplay loop preload="metadata"></video>
-</div>
-<div id="speed"></div>
-<!--郭鸿宇-->
 
 <div id="extension">
     <ul class="banImg clearfix">
@@ -112,18 +165,47 @@
         </li>
     </ul>
     <div class="focus">
-        <span class="s1"><i></i></span>
-        <span class="s2"><i></i></span>
-        <span class="s3"><i></i></span>
-        <span class="s4"><i></i></span>
-        <span class="s5"><i></i></span>
+            <span class="s1">
+                <i></i>
+            </span>
+        <span class="s2">
+                <i></i>
+            </span>
+        <span class="s3">
+                <i></i>
+            </span>
+        <span class="s4">
+                <i></i>
+            </span>
+        <span class="s5">
+                <i></i>
+            </span>
+    </div>
+</div>
+<div class="footer-lf" id="footer-lf">
+    <p class="ts-bot">正是兴趣</p>
+    <p class="ts-bot">让生活如此与众不同</p>
+    <div class="footer-bg ts-bot"><img src="img/page-lf.png" alt=""></div>
+    <div class="footer-ul">
+        <ul>
+            <li>安全论坛</li>
+            <li>特权中心</li>
+            <li>升级日志</li>
+            <li>安全统计</li>
+            <li>QQ浏览器 for Mac</li>
+            <li>QQ浏览器 for iPad</li>
+            <li>wiki</li>
+        </ul>
+        <div>© 2018 Tencent</div>
     </div>
 </div>
 <div id="life"></div>
 <div id="footer"></div>
-
+<script src="less-2.5.3.min.js"></script>
 <script src="js/animate.js"></script>
 
 <script src="js/index.js"></script>
+<script src="js/script.js"></script>
 </body>
+
 </html>

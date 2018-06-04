@@ -47,14 +47,15 @@ let banner1Render = (function () {
         focus.innerHTML = focusStr;
         imgList = banImg.querySelectorAll('li');
         focusList = focus.querySelectorAll('li');
-        let setHeight = function () {
+        /*let setHeight = function () {
             if (imgList.length !== 0) {
                 let imgH = imgList[0].offsetHeight;
-                banImg.style.height = imgH + 'px';
+                banner1.style.height=banImg.style.height = imgH + 'px';
             }
         };
         setHeight();
-        window.addEventListener('resize', setHeight);
+        window.addEventListener('resize', setHeight);*/
+        // banner1.style.display='block';
     };
 
     let focusChange = function () {

@@ -1,6 +1,4 @@
-/**
- * Created by Administrator on 2018/5/5.
- */
+
 let utils = (function () {
     //=>获取样式
     let getCss = (ele, attr) => {
