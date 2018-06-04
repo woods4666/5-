@@ -1,0 +1,310 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.skin {
+  padding: 60px 0 0 0;
+  width: 100%;
+}
+
+.skin .skin-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.skin .skin-inner .skin-header {
+  display: block;
+  font-family: "Microsoft YaHei";
+  color: #333;
+  text-align: center;
+}
+
+.skin .skin-inner .skin-header .title {
+  display: block;
+
+  font-size: 52px;
+  line-height: 1.5;
+  white-space: nowrap;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.skin .skin-inner .skin-header .info {
+  display: block;
+  font-size: 14px;
+  margin: 2px 0 0 0;
+  line-height: 30px;
+}
+
+.skin-w {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.skin-w .skin-w-inner {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  width: 1088px;
+  height: 561px;
+  border: 0;
+}
+.skin-w video:not([controls]) {
+  display: block;
+  height: 563px;
+}
+
+.skin-w video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1088px;
+  height: 563px;
+  border: none;
+}
+
+.speed {
+  margin: 32px 0 0 0;
+  height: 765px;
+  width: 100%;
+  border: 0;
+
+  background: #0d0d0d;
+  opacity: 1;
+}
+
+.speed .speed-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.speed .speed-wrapper .video-w {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.speed .speed-wrapper .video-w video {
+  display: inline;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.speed .video-bg {
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+
+  margin: auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: transparent;
+  /*float: left;*/
+}
+
+.speed .video-bg .video-info {
+  margin: 0 auto;
+  display: block;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
+  width: 765px;
+  line-height: 21px;
+  z-index: 999;
+}
+
+.speed .video-bg .video-info .info-title {
+  display: block;
+  vertical-align: middle;
+  text-align: center;
+  color: #fff;
+  z-index: 9999;
+  margin: 0 auto;
+  width: 516px;
+}
+
+.speed .video-bg .video-info .info-intro {
+  font-size: 32px;
+  display: block;
+  text-align: center;
+  color: white;
+  height: 48px;
+  line-height: 1.5;
+  letter-spacing: 7px;
+  margin: 56px 0 0 0;
+}
+
+.speed .video-bg .video-info .info-feature {
+  width: 570px;
+  margin: 43px auto 0;
+  display: block;
+  height: 66px;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.speed .video-bg .video-info .info-feature .feature-item {
+  margin: 0 auto;
+  display: block;
+  float: left;
+  width: 190px;
+  height: 66px;
+  text-align: center;
+}
+
+.speed .video-bg .video-info .info-feature .feature-item img {
+  display: block;
+  margin: 0 auto;
+  width: 38px;
+  height: 38px;
+}
+
+.speed .video-bg .video-info .info-feature .feature-item p {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin: 4px 0 0 0;
+  line-height: 1.75em;
+}
+
+
+.tabList {
+  position: relative;
+  overflow: hidden;
+  padding: 40px 0;
+}
+.tabList .inner {
+  width: 1024px;
+  margin: 0 auto;
+}
+.tabList .inner .tabLeft {
+  float: left;
+  margin: 63px 0 0 100px;
+  width: 333px;
+}
+.tabList .inner .tabLeft h2 {
+  font-size: 41px;
+}
+.tabList .inner .tabLeft .intro {
+  font-size: 12px;
+  line-height: 38px;
+  margin: 38px 0;
+}
+.tabList .inner .tabLeft .tabBox li {
+  float: left;
+  width: 111px;
+  text-align: center;
+  cursor: pointer;
+}
+.tabList .inner .tabLeft .tabBox li .img {
+  display: inline-block;
+  width: 41px;
+  height: 40px;
+  background: url("../img/logos-small.png") no-repeat;
+}
+.tabList .inner .tabLeft .tabBox li .img.img-1 {
+  background-position: -42px 0;
+}
+.tabList .inner .tabLeft .tabBox li .img.img-2 {
+  background-position: -126px 0;
+}
+.tabList .inner .tabLeft .tabBox li .img.img-3 {
+  background-position: -210px 0;
+}
+.tabList .inner .tabLeft .tabBox li .title {
+  margin: 16px auto 10px;
+}
+.tabList .inner .tabLeft .tabBox li .progress {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background: #cccccc;
+}
+.tabList .inner .tabLeft .tabBox li .progress .current {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #6c6c6c;
+}
+.tabList .inner .tabLeft .tabBox li.active .img.img-1 {
+  background-position: 0 0;
+}
+.tabList .inner .tabLeft .tabBox li.active .img.img-2 {
+  background-position: -84px 0;
+}
+.tabList .inner .tabLeft .tabBox li.active .img.img-3 {
+  background-position: -168px 0;
+}
+.tabList .inner .tabLeft .tabBox li.active .progress .current {
+  width: 100%;
+  transition: width 2s;
+}
+.tabList .inner .tabLeft .tabBox li.active .progress .current.handle {
+  transition: none;
+}
+.tabList .inner .imgBox {
+  position: relative;
+  float: right;
+  width: 654px;
+  height: 413px;
+  margin-right: -80px;
+  overflow: hidden;
+}
+.tabList .inner .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  float: left;
+  width: 100%;
+  height: auto;
+  transition: 1s;
+}
+.tabList .inner .imgBox img.active {
+  opacity: 1;
+}
+#collection .tabBox li .img.img-1 {
+  background-position: -42px -40px;
+}
+#collection .tabBox li .img.img-2 {
+  background-position: -126px -40px;
+}
+#collection .tabBox li .img.img-3 {
+  background-position: -210px -40px;
+}
+#collection .tabBox li.active .img.img-1 {
+  background-position: 0 -40px;
+}
+#collection .tabBox li.active .img.img-2 {
+  background-position: -84px -40px;
+}
+#collection .tabBox li.active .img.img-3 {
+  background-position: -168px -40px;
+}
+#collection .tabBox li.active .progress .current {
+  width: 100%;
+  transition: width 2s;
+}
+#collection .tabBox li.active .progress .current.handle {
+  transition: none;
+}
+

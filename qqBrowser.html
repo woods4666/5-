@@ -6,6 +6,7 @@
     <link rel="stylesheet/less" href="css/main.less">
     <link rel="stylesheet" href="css/reset.min.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/lunbo.css">
 </head>
 <body>
 <div class="fixedBar">
@@ -42,11 +43,46 @@
     </ul>
     <ul class="focus clearfix">
         <li class="active"></li>
-    <li></li>
+        <li></li>
 
     </ul>
 </div>
-<!--郭鸿宇-->
+<section id="sider" class="tabList">
+    <div class="inner">
+        <div class="tabLeft clearfix">
+            <h2>有侧栏，就够了</h2>
+            <p class="intro">融合资讯、追剧、直播、收藏等优质内容服务，全新 PC 使用体验，让电脑多一块屏幕</p>
+            <ul class="tabBox">
+                <li class="">
+                    <p class="img img-1"></p>
+                    <p class="title">资讯</p>
+                    <p class="progress">
+                        <span class="current"></span>
+                    </p>
+                </li>
+                <li>
+                    <p class="img img-2"></p>
+                    <p class="title">追剧</p>
+                    <p class="progress">
+                        <span class="current"></span>
+                    </p>
+                </li>
+                <li>
+                    <p class="img img-3"></p>
+                    <p class="title">直播</p>
+                    <p class="progress">
+                        <span class="current"></span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="imgBox">
+            <img class="" src="img/sider-bg1.jpg" alt="">
+            <img src="img/sider-bg2.jpg" alt="">
+            <img src="img/sider-bg3.jpg" alt="">
+        </div>
+    </div>
+</section>
 <section class="skin" id="skin">
     <div class="skin-inner">
         <div class="skin-header">
@@ -64,7 +100,8 @@ http://browser.qq.com/static/five.mp4?v=2" class="skin-video" autoplay loop prel
 <section class="speed" id="speed">
     <div class="speed-wrapper">
         <div class="video-w">
-            <video src="http://browser.qq.com/static/page-four.mp4?v=5" class="speed-video video1" autoplay loop  preload="metadata"></video>
+            <video src="http://browser.qq.com/static/page-four.mp4?v=5" class="speed-video video1" autoplay loop
+                   preload="metadata"></video>
             <div class="video-bg">
                 <div class="video-info">
                     <img src="img/page-four-chrom.png" srcset="img/page-four-chrom@2x.png" alt="" class="info-title">
@@ -78,7 +115,6 @@ http://browser.qq.com/static/five.mp4?v=2" class="skin-video" autoplay loop prel
                         <div class="feature-item">
                             <img src="img/four-icon-quick.png" alt="">
                             <p class="feature-text">网页极速打开</p>
-
                         </div>
                         <div class="feature-item">
                             <img src="img/four-icon-time.png" alt="">
@@ -94,14 +130,51 @@ http://browser.qq.com/static/five.mp4?v=2" class="skin-video" autoplay loop prel
 
     </div>
 </section>
-<!--郭鸿宇-->
-
-
-<div id="jump"></div>
-<!--郭鸿宇-->
-
-
+<section id="collection" class="tabList collection">
+    <div class="inner">
+        <div class="tabLeft clearfix">
+            <h2>收藏，内容笔记</h2>
+            <p class="intro">可一键收藏图片、文字、清洗后的网页正文，方便归类查看和管理。云端保存，永不丢失。</p>
+            <ul class="tabBox">
+                <li class="">
+                    <p class="img img-1"></p>
+                    <p class="title">网页收藏</p>
+                    <p class="progress">
+                        <span class="current"></span>
+                    </p>
+                </li>
+                <li>
+                    <p class="img img-2"></p>
+                    <p class="title">图片收藏</p>
+                    <p class="progress">
+                        <span class="current"></span>
+                    </p>
+                </li>
+                <li>
+                    <p class="img img-3"></p>
+                    <p class="title">文字收藏</p>
+                    <p class="progress">
+                        <span class="current"></span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="imgBox">
+            <img class="" src="img/collection-link-1.jpg" alt="">
+            <img src="img/collection-link-2.jpg" alt="">
+            <img src="img/collection-link-3.jpg" alt="">
+        </div>
+    </div>
+</section>
 <div id="extension">
+    <div class="extension-header">
+        <h3>十万款应用插件 海量扩展</h3>
+        <div class="ext-head-info">
+            <p>内置强大且实用的小工具，并提供数万款扩展应用，能快速打造</p>
+            <p>一款功能强大的浏览器。</p>
+        </div>
+
+    </div>
     <ul class="banImg clearfix">
         <li>
             <img src="img/slide-bg1.png" alt="">
@@ -201,11 +274,14 @@ http://browser.qq.com/static/five.mp4?v=2" class="skin-video" autoplay loop prel
 </div>
 <div id="life"></div>
 <div id="footer"></div>
+
 <script src="less-2.5.3.min.js"></script>
 <script src="js/animate.js"></script>
-
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/lunbo.js"></script>
 <script src="js/index.js"></script>
 <script src="js/script.js"></script>
+
 </body>
 
 </html>
